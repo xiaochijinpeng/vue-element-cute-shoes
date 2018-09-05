@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <el-container direction="vertical">
-      <c-header></c-header>
+      <c-header v-if="showHeader"></c-header>
       <el-main>
         <router-view/>
       </el-main>
@@ -15,6 +15,11 @@ import Header from './components/Header'
 export default {
   components: {
     'c-header': Header
+  },
+  computed: {
+    showHeader () {
+      return this.$route.path !== '/login'
+    }
   }
 }
 </script>
