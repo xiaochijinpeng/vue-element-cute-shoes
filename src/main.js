@@ -4,11 +4,13 @@ import router from './router'
 
 import 'element-ui/lib/theme-chalk/index.css'
 
-import { Header, Menu, MenuItem } from 'element-ui'
+import { Header, Menu, MenuItem, Container, Main } from 'element-ui'
 
 Vue.use(Header)
 Vue.use(Menu)
 Vue.use(MenuItem)
+Vue.use(Container)
+Vue.use(Main)
 
 Vue.config.productionTip = false
 
