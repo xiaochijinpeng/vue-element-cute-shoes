@@ -13,7 +13,8 @@ import {
   Form,
   FormItem,
   Input,
-  Button
+  Button,
+  Card
 } from 'element-ui'
 
 Vue.use(Header)
@@ -25,6 +26,7 @@ Vue.use(Form)
 Vue.use(FormItem)
 Vue.use(Input)
 Vue.use(Button)
+Vue.use(Card)
 
 Vue.config.productionTip = false
 
